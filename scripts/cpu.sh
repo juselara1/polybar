@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source "${HOME}/.config/polybar/scripts/pbar.sh"
 
 cpu_usage=`grep 'cpu ' /proc/stat | awk '{print int(100 * ($2 + $4) / ( $2 + $4 + $5))}'`

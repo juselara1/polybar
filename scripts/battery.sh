@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source "${HOME}/.config/polybar/scripts/pbar.sh"
 
 battery_usage=`upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | sed 's/[^0-9]//g'`
